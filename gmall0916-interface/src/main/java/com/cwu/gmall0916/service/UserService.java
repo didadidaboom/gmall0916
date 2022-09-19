@@ -1,6 +1,6 @@
-package com.cwu.gmall0916.user.service;
+package com.cwu.gmall0916.service;
 
-import com.cwu.gmall0916.user.bean.UserInfo;
+import com.cwu.gmall0916.bean.UserInfo;
 
 import java.util.List;
 

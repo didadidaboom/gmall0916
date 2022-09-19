@@ -1,8 +1,7 @@
 package com.cwu.gmall0916.user.controller;
 
-import com.cwu.gmall0916.user.bean.UserInfo;
-import com.cwu.gmall0916.user.service.UserService;
-import org.apache.ibatis.annotations.Update;
+import com.cwu.gmall0916.bean.UserInfo;
+import com.cwu.gmall0916.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

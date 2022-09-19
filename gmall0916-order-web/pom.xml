@@ -8,14 +8,14 @@
         <version>1.0-SNAPSHOT</version>
         <relativePath>../gmall0916-parent/pom.xml</relativePath>
     </parent>
-    <artifactId>gmall0916-user-manage</artifactId>
+    <artifactId>gmall0916-order-web</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>gmall0916-user-manage</name>
+    <name>gmall0916-order-web</name>
     <description>Demo project for Spring Boot</description>
     <dependencies>
         <dependency>
             <groupId>com.cwu.gmall0916</groupId>
-            <artifactId>gmall0916-util-service</artifactId>
+            <artifactId>gmall0916-util-web</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
@@ -24,20 +24,11 @@
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
-                </configuration>
             </plugin>
         </plugins>
     </build>

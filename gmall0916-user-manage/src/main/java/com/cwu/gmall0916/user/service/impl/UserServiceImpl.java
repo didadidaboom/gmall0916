@@ -1,10 +1,10 @@
 package com.cwu.gmall0916.user.service.impl;
 
-import com.cwu.gmall0916.user.bean.UserInfo;
+import com.alibaba.dubbo.config.annotation.Service;
+import com.cwu.gmall0916.bean.UserInfo;
 import com.cwu.gmall0916.user.mapper.UserMapper;
-import com.cwu.gmall0916.user.service.UserService;
+import com.cwu.gmall0916.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
 
 import java.util.List;
