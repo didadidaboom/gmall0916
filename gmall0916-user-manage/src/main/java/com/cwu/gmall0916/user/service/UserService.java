@@ -15,4 +15,6 @@ public interface UserService{
     void updateUserByName(String name, UserInfo userinfo);
 
     void delUser(UserInfo userinfo);
+
+    UserInfo getUserById(String id);
 }

@@ -14,6 +14,10 @@ public class UserController {
     @Autowired
     UserService userService;
 
+    @GetMapping("user")
+    public UserInfo getUser(String id){
+        return userService.getUserById(id);
+    }
     @GetMapping("userAll")
     public List<UserInfo> getAllUsers(){
         return userService.getUserinfoListAll();
