@@ -2,9 +2,9 @@ package com.cwu.gmall0916.user.controller;
 
 import com.cwu.gmall0916.user.bean.UserInfo;
 import com.cwu.gmall0916.user.service.UserService;
+import org.apache.ibatis.annotations.Update;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -14,9 +14,30 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @GetMapping("allusers")
+    @GetMapping("userAll")
     public List<UserInfo> getAllUsers(){
         return userService.getUserinfoListAll();
     }
+    @PostMapping("userAdd")
+    public String addUser(UserInfo userInfo){
+        userService.addUser(userInfo);
+        return "success: user added";
+    }
+    @PutMapping("userputname")
+    public String updateUserByName(UserInfo userInfo){
+        userService.updateUserByName(userInfo.getName(), userInfo);
+        return "success: update user by name";
+    }
+    @PutMapping("userput")
+    public String updateUser(UserInfo userInfo){
+        userService.updateUser(userInfo);
+        return "success: update user";
+    }
+    @DeleteMapping("userdelete")
+    public String deleteUser(UserInfo userInfo){
+        userService.delUser(userInfo);
+        return "success: delete user";
+    }
+
 
 }
